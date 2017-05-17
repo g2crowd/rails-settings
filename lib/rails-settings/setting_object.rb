@@ -63,8 +63,6 @@ module RailsSettings
 
     def _set_value(name, v)
       if value[name] != v
-        value_will_change!
-
         if v.nil?
           value.delete(name)
         else
